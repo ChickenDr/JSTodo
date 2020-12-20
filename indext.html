@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <p id="date">TODAY'S DATE</p>
+    </header>
+
+    <section>
+        <ul id="list">
+            <li class="item">
+                <input type="checkbox" id="switch" name="complite" value="done"/>
+                <label for="switch"></label>
+                <p>오늘의 할일</p>
+                <input class="button" type="button" name="delete" value="X">
+            </li>
+        </ul>
+    </section>
+
+    <form>
+        <input type="text" name="value" id="input_todo" placeholder="Add a to-do">
+    </form>
+</body>
+</html>

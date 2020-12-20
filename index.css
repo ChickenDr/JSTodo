@@ -1,0 +1,78 @@
+/* font-family: 'Andika New Basic', sans-serif;
+font-family: 'Jua', sans-serif; */
+
+*{
+    margin: 0;
+}
+
+/* BODY */
+body{
+    height: 100vh;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(#fcf8ec, #d0e8f2);
+    height: 20%;
+    position: relative;
+    
+}
+
+header p{
+    position: absolute;
+    top: 65%;
+    left: 4%;
+    font-size: 30px;
+    color: #79a3b1;
+    font-family: 'Jua', sans-serif;
+}
+
+/* SECTION */
+section{
+    height: 73%;
+}
+
+section #list{
+    padding: 0;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    width: 92%;
+}
+
+section #list .item{
+    margin-top: 10px;
+    display: flex;
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Andika New Basic', sans-serif;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+/* FOOTER */
+form{
+    height: 7%;
+    position: relative;
+}
+
+form #input_todo{
+    position: absolute;
+    border: none;
+    top: 25%;
+    left: 1%;
+    width: 95%;
+    height: 50%;
+}
+
+form #input_todo:focus{
+    border-style: none;
+    /* border-bottom: 2px solid skyblue; */
+}
+
+.icon{
+    font-size: 3px;
+}
