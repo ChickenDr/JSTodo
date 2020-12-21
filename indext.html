@@ -15,14 +15,15 @@
 </head>
 <body>
     <header>
-        <p id="date">TODAY'S DATE</p>
+        <p id="year"></p>
+        <p id="date"></p>
     </header>
 
     <section>
         <ul id="list">
             <li class="item">
                 <input type="checkbox" id="switch" name="complite" value="done"/>
-                <label for="switch"></label>
+                <label for="switch" class="check"></label>
                 <p>오늘의 할일</p>
                 <input class="button" type="button" name="delete" value="X">
             </li>
@@ -31,6 +32,7 @@
 
     <form>
         <input type="text" name="value" id="input_todo" placeholder="Add a to-do">
+        <label for="input_todo" class="bottom"></label>
     </form>
 </body>
 </html>

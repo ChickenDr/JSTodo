@@ -12,7 +12,7 @@ body{
 
 /* HEADER */
 header{
-    background: linear-gradient(#fcf8ec, #d0e8f2);
+    background: linear-gradient(#ffda77, #ffa45b);
     height: 20%;
     position: relative;
     
@@ -23,13 +23,17 @@ header p{
     top: 65%;
     left: 4%;
     font-size: 30px;
-    color: #79a3b1;
+    color: #393e46;
     font-family: 'Jua', sans-serif;
 }
 
 /* SECTION */
 section{
     height: 73%;
+}
+
+section p{
+    padding: 0px 10px 0px 10px;
 }
 
 section #list{
@@ -66,13 +70,27 @@ form #input_todo{
     left: 1%;
     width: 95%;
     height: 50%;
+    outline: none;
 }
 
-form #input_todo:focus{
-    border-style: none;
-    /* border-bottom: 2px solid skyblue; */
+form .bottom{
+    position: absolute;
+    border-bottom: 3px solid #f8f1f1;
+    width: 97%;
+    bottom: 15px;
+    left: 1%;
 }
 
-.icon{
-    font-size: 3px;
+form .bottom::after{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #393e46;
+    width: 0%;
+    bottom: -3px;
+    left: 0%;
+    transition: all 0.4s ease;
+}
+
+form #input_todo:focus + .bottom::after{
+    width: 100%;
 }

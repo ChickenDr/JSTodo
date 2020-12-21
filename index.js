@@ -1,8 +1,7 @@
-
 let todoList = [];
 
 // value
-const list = document.getElementById(list);
+const list = document.getElementById("list");
 const input = document.getElementById("input_todo");
 
 // 리스트 요소의 상태를 표시하는 값들
@@ -52,3 +51,16 @@ function removeToDo(element) {
     element.parentNode.removeChild(element.parentNode);
     todoList[element.id].del = true;
 }
+
+const dateYear = document.getElementById('year');
+const nowTime = document.getElementById('date');
+
+function clock() {
+    const date = new Date();
+    const year = date.getFullYear();
+
+    dateYear.innerText = `${year}`;
+    console.log(year);
+}
+
+clock();
