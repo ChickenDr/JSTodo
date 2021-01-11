@@ -8,31 +8,25 @@
     <title>Todo</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&family=Jua&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&family=Jua&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="checkbox.css">
-    <script type="text/javascript" src="./index.js"></script>
 </head>
 <body>
     <header>
-        <p id="year"></p>
+        <p id="year">0000</p>
         <p id="date"></p>
     </header>
 
     <section>
-        <ul id="list">
-            <li class="item">
-                <input type="checkbox" id="switch" name="complite" value="done"/>
-                <label for="switch" class="check"></label>
-                <p>오늘의 할일</p>
-                <input class="button" type="button" name="delete" value="X">
-            </li>
+		<ul id=list>
         </ul>
     </section>
 
-    <form>
-        <input type="text" name="value" id="input_todo" placeholder="Add a to-do">
+    <form onsubmit="return false;">
+        <input type="text" id="input_todo" placeholder="Add a to-do">
         <label for="input_todo" class="bottom"></label>
     </form>
 </body>
+    <script type="text/javascript" src="./index.js"></script>
 </html>
